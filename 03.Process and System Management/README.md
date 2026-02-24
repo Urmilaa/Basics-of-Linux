@@ -40,6 +40,24 @@ A process is an instance of a running program. Linux provides multiple utilities
 - `systemctl start service-name` – Start a daemon/service
 - `systemctl stop service-name` – Stop a daemon/service
 - `systemctl enable service-name` – Enable a service at startup
+### Services 
+A special type of background process that runs continuously to provide system functionality.
+
+Services usually:
+
+- `Start at boot time`
+
+- `Run in background`
+
+- `Managed by system manager (systemd)`
+
+Example services:
+
+- `Web server`
+
+- `SH server`
+
+- `Database server`
 
 ### Process states 
 | State | Meaning  |
