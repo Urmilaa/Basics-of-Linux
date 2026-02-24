@@ -5,7 +5,7 @@ A process is an instance of a running program. Linux provides multiple utilities
 
 ## Index of Commands Covered
 
-### Viewing Processes
+### Viewing Processes Commands -
 - `ps aux` – View all running processes
 - `ps -u username` – View processes for a specific user
 - `ps -C processname` – Show a process by name
