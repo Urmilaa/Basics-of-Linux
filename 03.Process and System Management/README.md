@@ -41,8 +41,28 @@ A process is an instance of a running program. Linux provides multiple utilities
 - `systemctl stop service-name` – Stop a daemon/service
 - `systemctl enable service-name` – Enable a service at startup
 
+### Process states 
+| State | Meaning  |
+| ----- | -------- |
+| R     | Running  |
+| S     | Sleeping |
+| D     | Waiting  |
+| Z     | Zombie   |
+| T     | Stopped  |
+
+
 ## Viewing Process Details
 ### Using `ps`
+```bash
+ps [options]
+```
+### ps Command Options:
+- -a: Show processes for all users.
+- -u: Display user-oriented format.
+- -x: Include processes that do not have a controlling terminal.
+- -e: Show information about all processes.
+- -f: Display a full listing of processes with additional information.
+
 Show processes for a specific user:
 ```bash
 ps -u username
@@ -168,3 +188,17 @@ systemctl enable service-name
 
 ## Conclusion
 Process management is crucial for system performance and stability. By using tools like `ps`, `top`, `htop`, `kill`, and `nice`, you can efficiently control and monitor Linux processes.
+
+## Practical DevOps Use Cases
+
+Since you work a lot with Linux & DevOps tools, ps is commonly used to:
+
+Check if nginx, jenkins, or docker services are running
+
+Find PID before killing a process
+
+Troubleshoot high CPU usage
+
+Debug zombie processes
+
+Monitor background jobs
