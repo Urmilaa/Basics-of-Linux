@@ -32,7 +32,9 @@ Tcsh	Enhanced version of C shell
 
 Check your current shell:
 
-`echo $SHELL`
+``` bash
+echo $SHELL
+```
 
 
 🐧 What Is Bash?
@@ -73,15 +75,23 @@ Automate tasks
 
 🧾 Structure of a Bash Script
 1️⃣ Shebang Line
+
+```bash
 #!/bin/bash
+
+```
 
 The shebang (#!) tells the system which interpreter to use.
 
 2️⃣ Example Script
+
+```bash
 #!/bin/bash
-echo "Hello, Muhammed!"
+echo "Hello, buddy!"
 date
-ls -l /home/muhammed
+```
+ls -l /home/ubuntu
+
 🔍 Explanation
 
 echo → Prints text
@@ -93,20 +103,31 @@ ls -l → Lists files in long format
 Commands run sequentially (top to bottom)
 
 🚀 How to Create and Run a Bash Script
+
 Step 1: Create Script File
-nano myscript.sh
+```bash
+vim  myscript.sh
+```
 
 Add script content and save.
 
 Step 2: Give Execute Permission
+```bash
 chmod +x myscript.sh
+chmod 754 myscript.sh
+```
+
 Step 3: Run the Script
+```bash
 ./myscript.sh
-
+```
 OR
-
+```bash
 bash myscript.sh
+```
+
 🎯 Why Use Bash Scripts?
+
 🔁 1. Automation
 
 Backups
