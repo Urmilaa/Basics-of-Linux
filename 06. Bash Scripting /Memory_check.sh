@@ -2,7 +2,7 @@
 
 set -x # set debug mode
 set -e # exit if any error
-set -o # pipefail
+set -o pipefail
 
 FREE_SPACE=$(free -mt | grep "Total" | awk '{print $4}')
 
@@ -19,6 +19,6 @@ then
 
 df -h
 
-ewrwerwerwer
+ewrwerwerwer | echo "Devops Demo"
 
 free -g
